@@ -1,1 +1,1 @@
-# EDA-Ci-ncia
+# Projetos EDA
