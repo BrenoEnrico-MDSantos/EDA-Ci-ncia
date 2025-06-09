@@ -11,7 +11,7 @@
 
 - Na proposta do estudo, apenas a pergunta de número 1 foi endereçada a mim, mas decidi analisar o período de forma mais ampla e propor medidas para cada _task_. Cada gráfico será acompanhado de uma análise descritiva (o que aconteceu) e diagnóstica (hipótese de causa); ao fim do estudo, constará a visão prescritiva (como ir adiante).
 
-- Todo o projeto foi conduzido no RStudio, pois construí mais familiaridade com o prgrama na trajetória do curso e julguei ser o software mais veloz no processamento de milhões de linhas, bem como apto a construção de visualizações estáticas mas suficientes para complementar as hipóteses.
+- Todo o projeto foi conduzido no RStudio, pois construí mais familiaridade com o prgrama na trajetória do curso e julguei ser o software mais veloz no processamento de milhões de linhas, bem como apto a construção de visualizações estáticas mas suficientes para complementar as hipóteses. Fiz uso dos packages **dplyr, ggplot2, janitor e lubridate.**
 
 > ## Integridade dos dados - ROCCC
 
@@ -21,4 +21,19 @@
 - [x] Current: a cada mês são anonimizados e postados no índice [índice] os registros correspondentes.
 - [x] Cited: as fontes são seguras, e com recomendação pela Google.
 
-## Database de maio a abril:
+## Database maio/24 a abril/25:
+
+Como as 12 tabelas `csv.` são idênticas no número de colunas e tipos de dados, variando apenas em nº de linhas, foi possível montar a tabela final fazendo o upload dos meses no _environment_ do RStudio para depois coligir os sets em um final com a fórmula `rbind()`. Obtém-se a tabela `Main` de 5.735,310 linhas.
+
+Os usuários, cada qual acredita-se portar um único ID, repetem suas aparições pelos meses, então a verificação de duplicatas de `ride_ID` com `get_dupes()` e "remoção" com `Main <- subset(Main, select = get_dupes(ride_id))` é desnecessário. Não há NAs nas 4 colunas indispensáveis ao projeto: `member_casual, rideable_type, started_at, ended_at`, então a quantia de linhas mantém-se inalterada.
+
+> Com `distinct()`, averiguei que há 3 tipos de veículo - _classic_bike, electric_bike, electric_scooter_ -, sendo impossível dizer se este último é apenas outro nome dado às bicicletas elétricas, já que faltam informações adicionais.
+
+As demais colunas originais foram excluídas, já que identificaçãoes da estação de _docking_ ou longitude e latitude não seriam aplicadas. Para calcular o tempo de viagem usei `difftime()`, e para extrair mês, dia da semana abreviado e hora do dia, usei
+
+O resultado foi um _dataset_ com 10 colunas, 
+
+```
+![1 - Proporção](https://github.com/user-attachments/assets/6641ee52-d870-405a-9da9-54c002418719)
+
+```
