@@ -38,4 +38,4 @@ O resultado foi um _dataset_ com 10 colunas,
 
 ```
 
-![Caso](Imagens/1 - Proporção.png)
+![Primeria](https://github.com/BrenoEnrico-MDSantos/EDA-Ci-ncia/blob/97cffca7ac1b0657890d6f64629d595696502ec9/Imagens/1%20-%20Propor%C3%A7%C3%A3o.png)
