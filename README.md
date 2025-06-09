@@ -38,4 +38,4 @@ O resultado foi um _dataset_ com 10 colunas,
 
 ```
 
-![Caso] Imagens/1 - Proporção.png
+![Caso](Imagens/1 - Proporção.png)
