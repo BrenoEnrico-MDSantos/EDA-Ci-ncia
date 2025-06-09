@@ -37,3 +37,5 @@ O resultado foi um _dataset_ com 10 colunas,
 ![1 - Proporção](https://github.com/user-attachments/assets/6641ee52-d870-405a-9da9-54c002418719)
 
 ```
+
+![Caso] Imagens/1 - Proporção.png
