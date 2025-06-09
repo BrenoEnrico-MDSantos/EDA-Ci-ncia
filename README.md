@@ -15,9 +15,10 @@
 
 > ## Integridade dos dados - ROCCC
 
- [x] Reliable: os dados não têm viés e são próprios para uso no estudo, tendo origem em uma empresa real (Motivate International Inc.).
- [] Original: os _sets_ provêm de uma terceirizada (Divvy), então não são exatamente originais.
- [] Comprehensive: informações básicas como tipo de membro, data e hora e tipo de bike alugada estão presentes e possibilitam uma compreensão intermediária do caso, mas não são compartilhados dados financeiros (nem mesmo do plano de assinatura), e boa parte das colunas não têm relevâcia alguma na análise, tornando a massa de mais de 5 milhões de entradas desnecessariamente pesada.
- [x] Current: a cada mês são anonimizados e postados no índice [índice] os registros correspondentes.
- [x] Cited: as fontes são seguras, e com recomendação pela Google.
+- [x] Reliable: os dados não têm viés e são próprios para uso no estudo, tendo origem em uma empresa real (Motivate International Inc.).
+- [ ] Original: os _sets_ provêm de uma terceirizada (Divvy), então não são exatamente originais.
+- [ ] Comprehensive: informações básicas como tipo de membro, data e hora e tipo de bike alugada estão presentes e possibilitam uma compreensão intermediária do caso, mas não são compartilhados dados financeiros (nem mesmo do plano de assinatura), e boa parte das colunas não têm relevâcia alguma na análise, tornando a massa de mais de 5 milhões de entradas desnecessariamente pesada.
+- [x] Current: a cada mês são anonimizados e postados no índice [índice] os registros correspondentes.
+- [x] Cited: as fontes são seguras, e com recomendação pela Google.
 
+## Database de maio a abril:
